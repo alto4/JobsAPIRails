@@ -1,3 +1,12 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  # Index: GET /jobs
+  get 'jobs'     => 'jobs#index'
+
+  # Show: GET /jobs/:id
+  get 'jobs/:id' => 'jobs#show'
+  
+  # Create: POST /jobs
+  post 'jobs'    => 'jobs#create' 
+  
 end
